@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.post-container {
+    height: 26.875rem;
+    width: 31.25rem;
+    border-radius: 0.875rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.post-heading {
+    padding: 0.875rem 0;
+    text-align: center;
+}
+
+.horizontal-line {
+    width: 100%;
+    border: 1px solid transparent;
+    border-top: 1px solid rgba(155, 158, 165, 0.349);
+}
+
+.post-content {
+    height: 15.125rem;
+    padding: .75rem 0;
+}
+
+.content-section {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-section {
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.user-image {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.post-textarea {
+    display: flex;
+    flex: 1;
+}
+
+.post-textarea textarea {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background-color: inherit;
+    outline: none;
+    resize: none;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    overflow-y: hidden;
+}
+
+.post-textarea textarea::placeholder {
+    color: rgb(101, 103, 107);
+}
+
+.style {
+    color: #FFF;
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+    text-align: center;
+}
+
+.style::placeholder {
+    color: #b8b8b8 !important;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center !important;
+}
+
+.background-options {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.background-selector {
+    height: 2.6rem;
+    width: 2.6rem;
+    cursor: pointer;
+}
+
+.background-colors {
+    display: none;
+    gap: .5rem;
+}
+
+.background-unselector {
+    background-color: rgb(228, 230, 235);
+    height: 2.2rem;
+    width: 2.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+}
+
+.background-unselector img {
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+}
+
+.white {
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: #FFF;
+    border-radius: 0.75rem;
+}
+
+.red {
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: red;
+    border-radius: 0.75rem;
+}
+
+.green {
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 0.75rem;
+    background-color: green;
+}
+
+.green::selection {
+    border: 1px solid #FFF;
+}
