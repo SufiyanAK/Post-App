@@ -3,48 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post App</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utilities.css">
-    <link rel="stylesheet" href="modern.css">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="post-container">
-            <h2 class="post-heading">Create Post</h2>
-
-            <div class="horizontal-line"></div>
-            
-            <div class="post-content">
-                <div class="user-section">
-                    <div class="user-image"></div>
-                    <div class="user-details">
-                        <h5 class="username">Sufiyan Ahmed Khan</h5>
-                        <div class="post-type">Public</div>
-                    </div>
-                </div>
-
-                <div class="content-section">
-                    <div class="post-textarea">
-                        <textarea class="post-text" placeholder="What's on your mind, Sufiyan?" name="post-content" id="post-content" rows="3"></textarea>
-                    </div>
-                    
-                    <div class="background-options">
-                        <img class="background-selector" src="images/SATP_Aa_square-2x.png" alt="background">
-                        
-                        <div class="background-colors">
-                            <div class="background-unselector">
-                                <img src="images/arrow_back_ios_FILL0_wght400_GRAD0_opsz24.svg" alt="background">
-                            </div>
-                            <div class="color white"></div>
-                            <div class="color red"></div>
-                            <div class="color green"></div>
-                        </div>
-                    </div>
+    <!-- NavBar -->
+    <header class="nav">
+        <nav class="menu">
+            <div class="logo">
+                <img src="icons/Facebook.png">
+                <div class="menu-search-bar">
+                    <div class="search-icon"><img src="icons/search.svg" alt=""></div>
+                    <input type="text" placeholder="Search Facebook">
                 </div>
             </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+            <ul class="menu-icons">
+                <li data-class="home" class="icon solid"><i class="bi bi-house"></i></li>
+                <li data-class="tv" class="icon"><i class="bi bi-tv"></i></li>
+                <li data-class="shop" class="icon"><i class="bi bi-shop-window"></i></li>
+                <li data-class="game" class="icon"><i class="bi bi-controller"></i></li>
+            </ul>
+            <div class="account-info">
+                <ul class="right-menu">
+                    <li class="right-icons"><img src="icons/circle-menu.png" alt=""></li>
+                    <li class="right-icons"><i class="bi bi-messenger"></i></li>
+                    <li class="right-icons"><i class="bi bi-bell-fill"></i></li>
+                    <li class="right-icons">
+                        <div class="profile-info"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <script src="js/nav.js"></script>
+
 </body>
 </html>

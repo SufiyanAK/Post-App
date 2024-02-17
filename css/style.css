@@ -1,0 +1,123 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5em;
+    background-color: #FFF;
+}
+
+.menu {
+    height: 100%;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.logo img {
+    width: 2.5rem;
+}
+
+.menu-search-bar {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    background-color: #f0f2f5;
+    padding: .5rem .8rem;
+    border-radius: 30px;
+}
+
+.search-icon img {
+    width: 1.6rem;
+}
+
+.menu-search-bar input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.menu-search-bar input::placeholder {
+    color: #65676b;
+    font-size: 1rem;
+}
+
+.menu-icons {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+.icon:hover {
+    background-color: #f0f2f5;
+}
+
+.icon i {
+    margin: auto;
+}
+
+.solid {
+    color: #0866ff;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #0866ff;
+}
+
+.icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 90%;
+    width: 7rem;
+}
+
+
+.icon i {
+    font-size: 1.4rem;
+}
+
+.account-info {
+    height: 90%;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: .5rem;
+    height: 100%;
+}
+
+.right-icons .profile-info,.right-icons img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.right-icons {
+    font-size: 1.2rem;
+    background-color: #f0f2f5;
+    padding: .8rem;
+    border-radius: 50%;
+}
